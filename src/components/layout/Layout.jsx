@@ -99,7 +99,7 @@ export default function Layout() {
                 {label}
               </NavLink>
             ))}
-            <Button to="/contact" variant="outline" className="nav-booking">
+            <Button to="/contact" className="nav-booking">
               Book for an event
             </Button>
           </nav>
@@ -118,15 +118,20 @@ export default function Layout() {
               And everything in between.
             </p>
           </div>
-          <div className="footer-links">
-            {links.slice(1).map(([to, label]) => (
-              <Link to={to} key={to}>
-                {label}
-              </Link>
-            ))}
+          <div>
+            <h3 className="footer-heading" id="footer-explore">
+              Explore the music
+            </h3>
+            <nav className="footer-links" aria-labelledby="footer-explore">
+              {links.slice(1).map(([to, label]) => (
+                <Link to={to} key={to}>
+                  {label}
+                </Link>
+              ))}
+            </nav>
           </div>
           <div className="footer-connect">
-            <span className="small-label">FIND YOUR NEXT FAVOURITE</span>
+            <h3 className="footer-heading">Stay in tune</h3>
             <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
               <Youtube size={18} />
               YouTube

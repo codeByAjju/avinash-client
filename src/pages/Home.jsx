@@ -131,7 +131,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <span className="hero-side-note">THE OFFICIAL ARTIST WEBSITE — AVINASH GUPTA</span>
+        <span className="hero-side-note">AVINASH GUPTA</span>
       </section>
       <div className="marquee-strip" aria-label="Melodies, memories, live moments">
         <span>THE SOUND OF NOSTALGIA</span>
